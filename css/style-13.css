@@ -1,0 +1,302 @@
+*{
+    padding:0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    min-width: 1200px;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+/*头部样式*/
+.header-img{
+    border-bottom: 1px solid #ccc;
+}
+.header-img>img{
+    width: 215px;
+    margin-left: 28px;
+}
+/*主体内容*/
+section:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+/*主体左侧*/
+.section-left{
+    width: 800px;
+    float: left;
+    margin-left: 28px;
+}
+/*单选按钮*/
+.section-left>.section-left-box-icon{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    padding-left: 102px;
+}
+.section-left>.section-left-box-icon>input:nth-of-type(2){
+    margin-left: 140px;
+}
+.section-left>.section-left-box-icon>input{
+     margin-right: 10px;
+}
+/*表单1*/
+.section-left>.section-left-form1>div>input{
+    margin-bottom: 40px;
+    margin-left: 5px;
+}
+.section-left>.section-left-box-icon>span{
+    font-size: 12px;
+}
+.section-left>.section-left-box-icon>span:nth-of-type(1){
+    font-size: 16px;
+}
+.section-left>.section-left-form1>div>input::-webkit-input-placeholder{
+    font-size: 18px;
+    color: #a9a9a9;
+}
+.section-left>.section-left-form1>div>label{
+    display: inline-block;
+    width: 86px;
+    height: 19px;
+    font-size: 18px;
+    line-height: 36px;
+    color: #a9a9a9;
+    text-align: right;
+}
+/*国家*/
+.section-left>.section-left-form1>.section-left-form1-row2{
+    position: relative;
+}
+.section-left>.section-left-form1>.section-left-form1-row2>input{
+    width: 400px;
+    height: 50px;
+    padding-left: 80px;
+}
+.section-left>.section-left-form1>.section-left-form1-row2>.table-row2-cn{
+    font-size: 18px;
+    color: #4c4b4b;
+    position: absolute;
+    top: 13px;
+    left: 116px;;
+}
+/*手机号码*/
+.section-left>.section-left-form1>.section-left-form1-row3>input{
+    width: 400px;
+    height: 50px;
+    padding-left: 20px;
+}
+.section-left>.section-left-form1>.section-left-form1-row3>.table-row3-cn{
+    font-size: 14px;
+    color: #a9a9a9;
+    margin-left: 2px;
+}
+/*登录密码*/
+.section-left>.section-left-form1>.section-left-form1-row4>input{
+    width: 400px;
+    height: 50px;
+    padding-left: 20px;
+}
+/*验证码*/
+.section-left>.section-left-form1>.section-left-form1-row5>input{
+    width:180px;
+    height: 50px;
+    padding-left: 20px;
+}
+.section-left>.section-left-form1>.section-left-form1-row5>img{
+    vertical-align: middle;
+    margin-left: 28px;
+    margin-right: 5px;
+}
+.section-left>.section-left-form1>.section-left-form1-row5>a{
+    color: #1a479c;
+}
+/*激活码*/
+.section-left>.section-left-form1>.section-left-form1-row6>input{
+    width:180px;
+    height: 50px;
+    padding-left: 20px;
+}
+.section-left>.section-left-form1>.section-left-form1-row6>input:nth-of-type(2){
+    width: 150px;
+    height: 30px;
+    background-color:#00a0e9;
+    font-size: 16px;
+    color: #ffffff;
+    margin-left: 28px;
+    text-indent:  -18px;
+    border: 0;
+}
+.section-left>.section-left-form1>.section-left-form1-row7{
+    color:#cdcdcd ;
+    font-size: 14px;
+    margin-left: 92px;
+}
+.section-left>.section-left-form1>.section-left-form1-row7>input{
+    width: 14px;
+    height: 14px;
+}
+.section-left>.section-left-form1>.section-left-form1-row7>a{
+    color: #1a479c;
+}
+.section-left>.section-left-form1>.section-left-form1-row8{
+    margin-left: 92px;
+}
+.section-left>.section-left-form1>.section-left-form1-row8>input{
+    background-color:#f19149;
+    color: #fff;
+    font-size: 24px;
+    width: 300px;
+    height: 45px;
+    border: 0;
+    margin-bottom: 60px;
+}
+/*表单2*/
+.section-left>.section-left-form2{
+    display: none;
+}
+.section-left>.section-left-form2>div>input{
+    margin-bottom: 40px;
+    margin-left: 5px;
+}
+
+.section-left>.section-left-form2>div>input::-webkit-input-placeholder{
+    font-size: 18px;
+    color: #a9a9a9;
+}
+.section-left>.section-left-form2>div>label{
+    display: inline-block;
+    width: 86px;
+    height: 19px;
+    font-size: 18px;
+    line-height: 36px;
+    color: #a9a9a9;
+    text-align: right;
+}
+/*邮箱*/
+.section-left>.section-left-form2>.section-left-form2-row3>input{
+    width: 400px;
+    height: 50px;
+    padding-left: 20px;
+}
+/*登录密码*/
+.section-left>.section-left-form2>.section-left-form2-row4>input{
+    width: 400px;
+    height: 50px;
+    padding-left: 20px;
+}
+/*验证码*/
+.section-left>.section-left-form2>.section-left-form2-row5>input{
+    width:180px;
+    height: 50px;
+    padding-left: 20px;
+}
+.section-left>.section-left-form2>.section-left-form2-row5>img{
+    vertical-align: middle;
+    margin-left: 28px;
+    margin-right: 5px;
+}
+.section-left>.section-left-form2>.section-left-form2-row5>a{
+    color: #1a479c;
+}
+/*激活码*/
+.section-left>.section-left-form2>.section-left-form2-row6>input{
+    width:180px;
+    height: 50px;
+    padding-left: 20px;
+}
+.section-left>.section-left-form2>.section-left-form2-row6>input:nth-of-type(2){
+    width: 150px;
+    height: 30px;
+    background-color:#00a0e9;
+    font-size: 16px;
+    color: #ffffff;
+    margin-left: 28px;
+    text-indent: -18px;
+    border: 0;
+}
+.section-left>.section-left-form2>.section-left-form2-row7{
+    color:#cdcdcd ;
+    font-size: 14px;
+    margin-left: 92px;
+
+}
+.section-left>.section-left-form2>.section-left-form2-row7>input{
+    width: 14px;
+    height: 14px;
+}
+.section-left>.section-left-form2>.section-left-form2-row8{
+    margin-left: 92px;
+}
+.section-left>.section-left-form2>.section-left-form2-row7>a{
+    color: #1a479c;
+}
+.section-left>.section-left-form2>.section-left-form2-row8>input {
+    background-color: #f19149;
+    color: #fff;
+    font-size: 24px;
+    width: 300px;
+    height: 45px;
+    border: 0;
+    margin-bottom: 60px;
+}
+/*主体右侧*/
+.section-right{
+    /*width: 400px;*/
+    float: left;
+    padding-top: 60px;
+}
+.section-right>img{
+   width: 372px;
+}
+
+/*网页尾部*/
+footer{
+    border-top: 1px solid  #ccc;
+    padding-top: 60px;
+    padding-bottom: 220px;
+}
+.footer-cn{
+    text-align: center;
+    padding-bottom: 15px;
+}
+.footer-cn>p{
+    font-size: 12px;
+    line-height: 24px;
+    color: #b8b8b8;
+}
+.footer-cn>p>img{
+    vertical-align: middle;
+    margin-right: 5px
+}
+footer>.footer-list{
+    text-align: center;
+}
+footer>.footer-list>ul>li{
+    list-style: none;
+    margin: 0 5px;
+    display:inline;
+}
+/*验证*/
+/*错误图*/
+.active1{
+    background:url(../imgss/cuowutishi.png)0 no-repeat;
+    background-size: 35px; ;
+    margin-left: 5px;
+    padding: 5px 0 ;
+    font-size: 12px;
+    color: #fa6363;
+    padding-left:35px ;
+    vertical-align: middle;
+}
+/*正确图*/
+.off{
+    background:url(../imgss/zhengquetishi.png)0 no-repeat;
+    background-size: 35px;
+    margin-left: 5px;
+
+}

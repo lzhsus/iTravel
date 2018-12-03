@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="icomoon-hotel/style.css" />
+    <link rel="stylesheet" href="css/style-header.css" />
+    <link rel="stylesheet" href="css/style-footer.css" />
+    <link rel="stylesheet" type="text/css" href="css/list.css" />
+    <link rel="stylesheet" type="text/css" href="css/manhuaDate.1.0.css" />
+    <link rel="stylesheet" href="css/cityselect.css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="js/jquery-1.5.1.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/footer.js"></script>
+    <script type="text/javascript" src="js/ui.tab.js"></script>
+    <script type="text/javascript" src="js/cityselect.js"></script>
+    <script type="text/javascript">
+        // <!--选项卡切换-->
+        $(document).ready(function () {
+            var tab = new $.fn.tab({
+                tabList: "#demo1 .ui-tab-container .ui-tab-list li",
+                contentList: "#demo1 .ui-tab-container .ui-tab-content"
+            });
+            var tab = new $.fn.tab({
+                tabList: "#demo1 .ui-tab-container .ui-tab-list2 li",
+                contentList: "#demo1 .ui-tab-container .ui-tab-content2"
+            });
+        });
+        // <!--点击更多-->
+        $(document).ready(function (e) {
+            $("#selectList").find(".more").toggle(function () {
+                $(this).addClass("more_bg");
+                $(".more-none").show()
+            }, function () {
+                $(this).removeClass("more_bg");
+                $(".more-none").hide();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!--头-->
+    <header>
+        <div class="headerOne">
+            <div class="header-container">
+                <img class="header-logo" src="img/icon/logo74×34.png" alt="" />
+                <div class="headerOne-right">
+                    <span>客服中心&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;24小时热线：400-xxx-6666</span>
+                    <span class="icon-mobile header-phone"></span>
+                    <span class="icon-WeChat header-wechat"></span>
+                    <div class="phone-hover">
+                        <div class="triangle-border-up">
+                        </div>
+                        <div class="hover-cont">
+                            <img src="img/img/erweima_1126.jpg" alt="" />
+                            <span>手机扫码快速下载</span>
+                            <span>App享受最多50%优惠力度</span>
+                        </div>
+                    </div>
+                    <div class="wechat-hover">
+                        <div class="triangle-border-up">
+                        </div>
+                        <div class="hover-cont">
+                            <img src="img/img/erweima_1126.jpg" alt="" />
+                            <span>i旅行微信公众号:</span>
+                            <span class="ilvxing">ilvxing</span>
+                            <span>手机扫一扫，享受专属福利</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headerTwo">
+            <div class="header-container">
+                <ul class="header-tit">
+                    <li><a href="index.html"><img src="img/icon/li-1.png" alt="" /><span>首页</span></a></li>
+                    <li><a href="travel.html"><img src="img/icon/li-2.png" alt="" /><span>旅游</span></a></li>
+                    <li><a href="hotel1.html"><img src="img/icon/li-3.png" alt="" /><span>酒店</span></a></li>
+                    <li><a href="8index.html"><img src="img/icon/li-4.png" alt="" /><span>机票</span></a></li>
+                    <li><a href="search2.html"><img src="img/icon/li-5.png" alt="" /><span>门票</span></a></li>
+                    <li class="header-active"><a href="Chendu.html"><img src="img/icon/li-6.png" alt="" /><span>攻略</span></a></li>
+                </ul>
+                <div class="headertwo-right">
+                    <img src="img/icon/user.png" alt="" />
+                    <span>
+                        <a href="denglu-12.html">登录</a>
+                        |
+                        <a href="zhuce-13.html">注册</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--内容-->
+    <div class="content-box">
+        <!--筛选-->
+        <div class="list-screen">
+            <div class="screen-top" style="position:relative;">
+                <span>目的地<input type="text" class="cityinput" id="citySelect" placeholder="请输入目的地"></span>
+                <span>入住<input id="d4311" class="Wdate" type="text" onclick="WdatePicker({minDate:'%y-%M-%d',maxDate:'#F{$dp.$D(\'d4312\')}'})"
+                    /></span>
+                <span>退房<input id="d4312" class="Wdate" type="text" onclick="WdatePicker({minDate:'#F{$dp.$D(\'d4311\')||\'%y-%M-%d\'}'})"
+                    /> </span>
+                <span>关键词<input type="text" class="ju-adress" /></span>
+                <a href="#" id="submit-btn" />搜索</a>
+            </div>
+
+            <div style="padding:10px 30px 10px 10px;">
+                <div class="screen-term">
+                    <div class="selectNumberScreen">
+                        <div id="selectList" class="screenBox screenBackground">
+                            <dl class="listIndex">
+                                <dt>位置</dt>
+                                <dd>
+                                    <label><a href="javascript:;" attrval="不限">不限</a> </label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">天安门</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">中关村</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">西单</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">首都机场</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">亚运村</a></label>
+                                </dd>
+                            </dl>
+                            <dl class="listIndex">
+                                <dt>价格</dt>
+                                <dd>
+                                    <label><a href="javascript:;" attrval="不限">不限</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">¥150元以下</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">¥150-300元
+                                        </a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">¥301-450元</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">¥451-600元</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">¥601-750元</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">¥800元以上</a></label>
+                                </dd>
+                            </dl>
+                            <dl class="listIndex">
+                                <dt>星级</dt>
+                                <dd>
+                                    <label><a href="javascript:;" attrval="不限">不限</a> </label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">二星级及以下</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">三星/舒适</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">四星/高档</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">五星/豪华</a></label>
+                                </dd>
+                            </dl>
+                            <dl class="listIndex">
+                                <dt>特色</dt>
+                                <dd>
+                                    <label><a href="javascript:;" attrval="不限">不限</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">休闲度假</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">青年旅社</a>
+                                    </label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">精品酒店</a>
+                                    </label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">商务出行</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">会议酒店</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">公寓</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">四合院</a></label>
+                                    <span class="more"><em class="open"></em>更多</span>
+                                </dd>
+                            </dl>
+                            <dl class="listIndex more-none" style="display:none;border:none">
+                                <dt></dt>
+                                <dd>
+                                    <label><a href="javascript:;" attrval="不限">不限</a></label>
+                                    <form action="" method="get">
+                                        <label><input name="checkbox3" type="checkbox" value="" /><a href="javascript:;">精品酒店2</a></label>
+                                        <label><input name="checkbox3" type="checkbox" value="" /><a href="javascript:;">精品酒店3</a>
+                                        </label>
+                                        <label><input name="checkbox3" type="checkbox" value="" /><a href="javascript:;">精品酒店4</a>
+                                        </label>
+                                    </form>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hasBeenSelected clearfix">
+                <span id="time-num"><font>8</font>家酒店</span>
+                <div style="float:right;" class="eliminateCriteria">【清空全部】</div>
+                <dl>
+                    <dt>已选条件：</dt>
+                    <dd style="display:none" class="clearDd">
+                        <div class="clearList"></div>
+                    </dd>
+                </dl>
+            </div>
+
+            <script type="text/javascript" src="js/shaixuan.js"></script>
+
+        </div>
+        <!--小列表-->
+        <div class="list-last">
+            <ul class="list-first-ul">
+                <li>
+                    最受欢迎
+                </li>
+                <li>
+                    评分
+                </li>
+                <li>
+                    <select>
+                        <option>价格</option>
+                        <option>¥150元以下</option>
+                        <option>¥150-300元 </option>
+                        <option>¥301-450元</option>
+                        <option>¥451-600元</option>
+                        <option>¥601-750元</option>
+                        <option>¥800元以上</option>
+                    </select>
+                </li>
+                <li>
+                    <select>
+                        <option>星级</option>
+                        <option>二星级及以下</option>
+                        <option>三星/舒适</option>
+                        <option>四星/高档</option>
+                        <option>五星/豪华</option>
+                    </select>
+                </li>
+            </ul>
+            <ul class="list-second-ul">
+                <li>
+                    <label><input type="checkbox">立即确定</label>
+                    <label><input type="checkbox">可定</label>
+                    <label><input type="checkbox">促销</label>
+                    <label><input type="checkbox">在线付</label>
+                    <label><input type="checkbox">闪住</label>
+                    <label><input type="checkbox">钟点房</label>
+                </li>
+
+            </ul>
+        </div>
+        <!--酒店-->
+        <div class="travel">
+            <div class="travel-left">
+                <img src="img/jiudian.png">
+            </div>
+            <div class="travel-right">
+                <div class="travel-right-title">
+                    北京盘古七星酒店<img class="info-btn" src="img/i.png" alt="">
+                    <div class="info">
+                        <span>
+                            酒店地处北四环奥运村北辰商业中心，甜邻国家体育馆，奥林匹克公园，直接俯瞰著名<br> 酒店地处北四环奥运村北辰商业中心，甜邻国家体育馆，奥林匹克公园，直接俯瞰著名
+                            <br> 酒店地处北四环奥运村北辰商业中心，甜邻国家体育馆，奥林匹克公园，直接俯瞰著名
+                            <br> 酒店地处北四环奥运村北辰商业中心，甜邻国家
+                        </span>
+                    </div>
+                </div>
+                <div class="travel-right-smTitle">
+                    <img src="img/dim.png" alt="" />
+                    <img src="img/dim.png" alt="" />
+                    <img src="img/dim.png" alt="" />
+                    <img src="img/dim.png" alt="" />
+                    <img src="img/dim.png" alt="" />
+                    <span>商务出行</span>
+                    <span>会议酒店</span>
+                    <span>精品酒店</span>
+                </div>
+                <div class="travel-right-places">
+                    <p>朝阳区北四环中路27号，盘古大观，近奥运村国家体育馆。【亚运村<br> 奥运中心地区】
+                    </p>
+                    <p>
+                        <span>交通地图</span><span>周边街景</span>
+                        <img src="img/wifi.png" alt="">
+                        <img src="img/swim.png" alt="">
+                        <img src="img/eat-2.png" alt="">
+                        <img src="img/park.png" alt="">
+                    </p>
+                </div>
+                <div class="comment" style="background: #FFFFFF">
+                    <p>¥<span class="money">2059</span>起</p>
+                    <input type="button" value="查看详细">
+                </div>
+                <div class="comment">
+                    <p><span>4.7</span>/5</p>
+                    <p>98%用户推荐</p>
+                    <p>源自于1653为住客点评</p>
+                </div>
+            </div>
+        </div>
+        <div class="travel">
+            <div class="travel-left">
+                <img src="img/jiudian.png">
+            </div>
+            <div class="travel-right">
+                <div class="travel-right-title">
+                    北京盘古七星酒店<img class="info-btn" src="img/i.png" alt="">
+                    <div class="info">
+                        <span>
+                            酒店地处北四环奥运村北辰商业中心，甜邻国家体育馆，奥林匹克公园，直接俯瞰著名<br> 酒店地处北四环奥运村北辰商业中心，甜邻国家体育馆，奥林匹克公园，直接俯瞰著名
+                            <br> 酒店地处北四环奥运村北辰商业中心，甜邻国家体育馆，奥林匹克公园，直接俯瞰著名
+                            <br> 酒店地处北四环奥运村北辰商业中心，甜邻国家
+                        </span>
+                    </div>
+                </div>
+                <div class="travel-right-smTitle">
+                    <img src="img/dim.png" alt="" />
+                    <img src="img/dim.png" alt="" />
+                    <img src="img/dim.png" alt="" />
+                    <img src="img/dim.png" alt="" />
+                    <img src="img/dim.png" alt="" />
+                    <span>商务出行</span>
+                    <span>会议酒店</span>
+                    <span>精品酒店</span>
+                </div>
+                <div class="travel-right-places">
+                    <p>朝阳区北四环中路27号，盘古大观，近奥运村国家体育馆。【亚运村<br> 奥运中心地区】
+                    </p>
+                    <p>
+                        <span>交通地图</span><span>周边街景</span>
+                        <img src="img/wifi.png" alt="">
+                        <img src="img/swim.png" alt="">
+                        <img src="img/eat-2.png" alt="">
+                        <img src="img/park.png" alt="">
+                    </p>
+                </div>
+                <div class="comment" style="background: #FFFFFF">
+                    <p>¥<span class="money">2059</span>起</p>
+                    <input type="button" value="查看详细">
+                </div>
+                <div class="comment">
+                    <p><span>4.7</span>/5</p>
+                    <p>98%用户推荐</p>
+                    <p>源自于1653为住客点评</p>
+                </div>
+            </div>
+        </div>
+        <div class="travel">
+            <div class="travel-left">
+                <img src="img/jiudian.png">
+            </div>
+            <div class="travel-right">
+                <div class="travel-right-title">
+                    北京盘古七星酒店<img class="info-btn" src="img/i.png" alt="">
+                    <div class="info">
+                        <span>
+                            酒店地处北四环奥运村北辰商业中心，甜邻国家体育馆，奥林匹克公园，直接俯瞰著名<br> 酒店地处北四环奥运村北辰商业中心，甜邻国家体育馆，奥林匹克公园，直接俯瞰著名
+                            <br> 酒店地处北四环奥运村北辰商业中心，甜邻国家体育馆，奥林匹克公园，直接俯瞰著名
+                            <br> 酒店地处北四环奥运村北辰商业中心，甜邻国家
+                        </span>
+                    </div>
+                </div>
+                <div class="travel-right-smTitle">
+                    <img src="img/dim.png" alt="" />
+                    <img src="img/dim.png" alt="" />
+                    <img src="img/dim.png" alt="" />
+                    <img src="img/dim.png" alt="" />
+                    <img src="img/dim.png" alt="" />
+                    <span>商务出行</span>
+                    <span>会议酒店</span>
+                    <span>精品酒店</span>
+                </div>
+                <div class="travel-right-places">
+                    <p>朝阳区北四环中路27号，盘古大观，近奥运村国家体育馆。【亚运村<br> 奥运中心地区】
+                    </p>
+                    <p>
+                        <span>交通地图</span><span>周边街景</span>
+                        <img src="img/wifi.png" alt="">
+                        <img src="img/swim.png" alt="">
+                        <img src="img/eat-2.png" alt="">
+                        <img src="img/park.png" alt="">
+                    </p>
+                </div>
+                <div class="comment" style="background: #FFFFFF">
+                    <p>¥<span class="money">2059</span>起</p>
+                    <input type="button" value="查看详细">
+                </div>
+                <div class="comment">
+                    <p><span>4.7</span>/5</p>
+                    <p>98%用户推荐</p>
+                    <p>源自于1653为住客点评</p>
+                </div>
+            </div>
+        </div>
+        <div class="travel">
+            <div class="travel-left">
+                <img src="img/jiudian.png">
+            </div>
+            <div class="travel-right">
+                <div class="travel-right-title">
+                    北京盘古七星酒店<img class="info-btn" src="img/i.png" alt="">
+                    <div class="info">
+                        <span>
+                            酒店地处北四环奥运村北辰商业中心，甜邻国家体育馆，奥林匹克公园，直接俯瞰著名<br> 酒店地处北四环奥运村北辰商业中心，甜邻国家体育馆，奥林匹克公园，直接俯瞰著名
+                            <br> 酒店地处北四环奥运村北辰商业中心，甜邻国家体育馆，奥林匹克公园，直接俯瞰著名
+                            <br> 酒店地处北四环奥运村北辰商业中心，甜邻国家
+                        </span>
+                    </div>
+                </div>
+                <div class="travel-right-smTitle">
+                    <img src="img/dim.png" alt="" />
+                    <img src="img/dim.png" alt="" />
+                    <img src="img/dim.png" alt="" />
+                    <img src="img/dim.png" alt="" />
+                    <img src="img/dim.png" alt="" />
+                    <span>商务出行</span>
+                    <span>会议酒店</span>
+                    <span>精品酒店</span>
+                </div>
+                <div class="travel-right-places">
+                    <p>朝阳区北四环中路27号，盘古大观，近奥运村国家体育馆。【亚运村<br> 奥运中心地区】
+                    </p>
+                    <p>
+                        <span>交通地图</span><span>周边街景</span>
+                        <img src="img/wifi.png" alt="">
+                        <img src="img/swim.png" alt="">
+                        <img src="img/eat-2.png" alt="">
+                        <img src="img/park.png" alt="">
+                    </p>
+                </div>
+                <div class="comment" style="background: #FFFFFF">
+                    <p>¥<span class="money">2059</span>起</p>
+                    <input type="button" value="查看详细">
+                </div>
+                <div class="comment">
+                    <p><span>4.7</span>/5</p>
+                    <p>98%用户推荐</p>
+                    <p>源自于1653为住客点评</p>
+                </div>
+            </div>
+        </div>
+        <div class="travel">
+            <div class="travel-left">
+                <img src="img/jiudian.png">
+            </div>
+            <div class="travel-right">
+                <div class="travel-right-title">
+                    北京盘古七星酒店<img class="info-btn" src="img/i.png" alt="">
+                    <div class="info">
+                        <span>
+                            酒店地处北四环奥运村北辰商业中心，甜邻国家体育馆，奥林匹克公园，直接俯瞰著名<br> 酒店地处北四环奥运村北辰商业中心，甜邻国家体育馆，奥林匹克公园，直接俯瞰著名
+                            <br> 酒店地处北四环奥运村北辰商业中心，甜邻国家体育馆，奥林匹克公园，直接俯瞰著名
+                            <br> 酒店地处北四环奥运村北辰商业中心，甜邻国家
+                        </span>
+                    </div>
+                </div>
+                <div class="travel-right-smTitle">
+                    <img src="img/dim.png" alt="" />
+                    <img src="img/dim.png" alt="" />
+                    <img src="img/dim.png" alt="" />
+                    <img src="img/dim.png" alt="" />
+                    <img src="img/dim.png" alt="" />
+                    <span>商务出行</span>
+                    <span>会议酒店</span>
+                    <span>精品酒店</span>
+                </div>
+                <div class="travel-right-places">
+                    <p>朝阳区北四环中路27号，盘古大观，近奥运村国家体育馆。【亚运村<br> 奥运中心地区】
+                    </p>
+                    <p>
+                        <span>交通地图</span><span>周边街景</span>
+                        <img src="img/wifi.png" alt="">
+                        <img src="img/swim.png" alt="">
+                        <img src="img/eat-2.png" alt="">
+                        <img src="img/park.png" alt="">
+                    </p>
+                </div>
+                <div class="comment" style="background: #FFFFFF">
+                    <p>¥<span class="money">2059</span>起</p>
+                    <input type="button" value="查看详细">
+                </div>
+                <div class="comment">
+                    <p><span>4.7</span>/5</p>
+                    <p>98%用户推荐</p>
+                    <p>源自于1653为住客点评</p>
+                </div>
+            </div>
+        </div>
+        <!--分页器-->
+        <div id="app" style="margin-bottom: 20px">
+            <div>
+                <div class="page" v-show="show">
+                    <div class="pagelist">
+                        <span class="jump" :class="{disabled:pstart}" @click="{current_page--}">上一页</span>
+                        <span v-show="current_page>5" class="jump" @click="jumpPage(1)">1</span>
+                        <span class="ellipsis" v-show="efont">...</span>
+                        <span class="jump" v-for="num in indexs" :class="{bgprimary:current_page==num}" @click="jumpPage(num)">{{num}}</span>
+                        <span class="ellipsis" v-show="ebehind">...</span>
+
+                        <span :class="{disabled:pend}" class="jump" @click="{current_page++}">下一页</span>
+                        <span v-show="current_page<pages-4" class="jump" @click="jumpPage(pages)">{{pages}}</span>
+
+                        <span class="jumppoint">到：</span>
+                        <span class="jumpinp"><input type="text" v-model="changePage" value="1">页</span>
+                        <span class="jump gobtn" @click="jumpPage(changePage)">确定</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--尾-->
+    <footer>
+        <div class="footerOne">
+            <div class="footer-container">
+                <div class="footerone-left">
+                    <h4>下载<img src="img/icon/logo74×34.png" alt="" />手机客户端</h4>
+                    <span>
+                        特价机票、一折酒店、出行安全保障、预约担保最佳旅行路线、吃喝玩乐一掌在手
+                    </span>
+                    <span>
+                        立刻下载
+                    </span>
+                </div>
+                <div class="footerone-right">
+                    <div class="fright-one">
+                        <img src="img/img/erweima_1126.jpg" alt="" />
+                        <span>微信公众平台</span>
+                    </div>
+                    <div class="fright-two">
+                        <img src="img/img/erweima_1126.jpg" alt="" />
+                        <span>App下载</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerTwo">
+            <div class="footer-container">
+                <div class="footertwo-one">
+                    <div class="ftwo-left">
+                        <ul class="ftwo-left-list">
+                            <li>
+                                <img src="img/icon/i_serve_11.png" alt="" />
+                                <h4>贴心的服务</h4>
+                                <p>业内领先服务标准 用户保障系统</p>
+                            </li>
+                            <li>
+                                <img src="img/icon/i_price_11.png" alt="" />
+                                <h4>优质的价格</h4>
+                                <p>极具竞争力的价格 无任何隐形消费</p>
+                            </li>
+                            <li>
+                                <img src="img/icon/i_num_11.png" alt="" />
+                                <h4>4008-xxx-6666</h4>
+                                <p>24小时客服热线 无时不刻在您身边</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ftwo-right">
+                        <ul class="footer-list">
+                            <li>
+                                <h5>旅游资讯</h5>
+                            </li>
+                            <li>
+                                <span>宾馆索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;攻略索引</span>
+                            </li>
+                            <li>
+                                <span>机票索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网站导航</span>
+                            </li>
+                            <li>
+                                <span>旅游索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;火车票索引</span>
+                            </li>
+                            <li>
+                                <span>邮轮索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用车索引</span>
+                            </li>
+                            <li>
+                                <span>企业差旅索引</span>
+                            </li>
+                        </ul>
+                        <ul class="footer-list">
+                            <li>
+                                <h5>加盟合作</h5>
+                            </li>
+                            <li>
+                                <span>宾馆索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;攻略索引</span>
+                            </li>
+                            <li>
+                                <span>机票索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网站导航</span>
+                            </li>
+                            <li>
+                                <span>旅游索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;火车票索引</span>
+                            </li>
+                            <li>
+                                <span>邮轮索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用车索引</span>
+                            </li>
+                            <li>
+                                <span>企业差旅索引</span>
+                            </li>
+                        </ul>
+                        <ul class="footer-list">
+                            <li>
+                                <h5>关于我们</h5>
+                            </li>
+                            <li>
+                                <span>宾馆索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;攻略索引</span>
+                            </li>
+                            <li>
+                                <span>机票索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网站导航</span>
+                            </li>
+                            <li>
+                                <span>旅游索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;火车票索引</span>
+                            </li>
+                            <li>
+                                <span>邮轮索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用车索引</span>
+                            </li>
+                            <li>
+                                <span>企业差旅索引</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footertwo-two">
+                    <p>Copyright©1999-2016, ctrip.com. All rights reserved. | ICP证：沪B2-200501xx</p>
+                    <p><img src="img/icon/hui1126.png" alt="" />沪公网备310105020000xx号</p>
+                    <p>旅游违法行为举报电话12318 丨服务质量投诉电话 962020 丨北京市旅游网站落实诚信建设主体责任承诺书</p>
+                    <div class="bottom-pic">
+                        <img src="img/icon/icon1126_11.jpg" alt="" />
+                        <img src="img/icon/icon1126_13.jpg" alt="" />
+                        <img src="img/icon/icon1126_15.jpg" alt="" />
+                        <img src="img/icon/icon1126_17.jpg" alt="" />
+                        <img src="img/icon/icon1126_19.jpg" alt="" />
+                        <img src="img/icon/icon1126_21.jpg" alt="" />
+                        <img src="img/icon/icon1126_23.jpg" alt="" />
+                        <img src="img/icon/icon1126_25.jpg" alt="" />
+                        <img src="img/icon/icon1126_27.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/vue.js"></script>
+    <script language="javascript" type="text/javascript" src="My97DatePicker-hotel/WdatePicker.js"></script>
+    <script src="js/hotel.js"></script>
+    <script type="text/javascript">
+        var test = new Vcity.CitySelector({ input: 'citySelect' });
+    </script>
+</body>
+
+</html>

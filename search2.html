@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style-header.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="icomoon-search/style.css" />
+    <link rel="stylesheet" href="css/search-css.css">
+    <link rel="stylesheet" href="css/style-footer.css" />
+    <link rel="stylesheet" type="text/css" href="css/list1.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/list.css"/> -->
+    <script src="js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="js/jquery-1.5.1.js"></script>
+    <script type="text/javascript" src="js/ui.tab.js"></script>
+    <script type="text/javascript">
+        // <!--选项卡切换-->
+        $(document).ready(function () {
+            var tab = new $.fn.tab({
+                tabList: "#demo1 .ui-tab-container .ui-tab-list li",
+                contentList: "#demo1 .ui-tab-container .ui-tab-content"
+            });
+            var tab = new $.fn.tab({
+                tabList: "#demo1 .ui-tab-container .ui-tab-list2 li",
+                contentList: "#demo1 .ui-tab-container .ui-tab-content2"
+            });
+        });
+        // <!--点击更多-->
+        $(document).ready(function (e) {
+            $("#selectList").find(".more").toggle(function () {
+                $(this).addClass("more_bg");
+                $(".more-none").show()
+            }, function () {
+                $(this).removeClass("more_bg");
+                $(".more-none").hide();
+            });
+        });
+    </script>
+</head>
+<style>
+    .header-tit {
+        margin-top: -2.5px;
+
+    }
+
+    .headertwo-right {
+        margin-left: 301px;
+        margin-top: 2px;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="headerOne">
+            <div class="header-container">
+                <img class="header-logo" src="img/icon/logo74×34.png" alt="" />
+                <div class="headerOne-right">
+                    <span>客服中心&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;24小时热线：400-xxx-6666</span>
+                    <span class="icon-mobile header-phone"></span>
+                    <span class="icon-WeChat header-wechat"></span>
+                    <div class="phone-hover">
+                        <div class="triangle-border-up">
+                        </div>
+                        <div class="hover-cont">
+                            <img src="img/img/erweima_1126.jpg" alt="" />
+                            <span>手机扫码快速下载</span>
+                            <span>App享受最多50%优惠力度</span>
+                        </div>
+                    </div>
+                    <div class="wechat-hover">
+                        <div class="triangle-border-up">
+                        </div>
+                        <div class="hover-cont">
+                            <img src="img/img/erweima_1126.jpg" alt="" />
+                            <span>i旅行微信公众号:</span>
+                            <span class="ilvxing">ilvxing</span>
+                            <span>手机扫一扫，享受专属福利</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headerTwo">
+            <div class="header-container">
+                <ul class="header-tit">
+                    <ul class="header-tit">
+                        <li><a href="index.html"><img src="img/icon/li-1.png" alt="" /><span>首页</span></a></li>
+                        <li><a href="travel.html"><img src="img/icon/li-2.png" alt="" /><span>旅游</span></a></li>
+                        <li><a href="hotel1.html"><img src="img/icon/li-3.png" alt="" /><span>酒店</span></a></li>
+                        <li><a href="8index.html"><img src="img/icon/li-4.png" alt="" /><span>机票</span></a></li>
+                        <li><a href="search2.html"><img src="img/icon/li-5.png" alt="" /><span>门票</span></a></li>
+                        <li class="header-active"><a href="Chendu.html"><img src="img/icon/li-6.png" alt="" /><span>攻略</span></a></li>
+                    </ul>
+                    <div class="headertwo-right">
+                        <img src="img/icon/user.png" alt="" />
+                        <span>
+                            <a href="denglu-12.html">登录</a>
+                            |
+                            <a href="zhuce-13.html">注册</a>
+                        </span>
+                    </div>
+            </div>
+        </div>
+    </header>
+    <div style="width:1143px;margin:20px auto 0 auto;">
+        <div class="top-search">
+            <ul>
+                <li>
+                    <div class="search-station">
+                        <img src="img/img/placesIcon.jpg" alt="">
+                        <span class="places-titile">北京</span>站
+                        <img class="down" src="img/img/down.png" alt="">
+                        <ul class="station-small">
+                            <li>上海</li>
+                            <li>深圳</li>
+                            <li>南京</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-places">
+                        <img class="hot-icon" src="img/img/hot.jpg" alt="">
+                        <span class="hot-place">热门目的地</span>
+                        <img class="down" src="img/img/down.png" alt="">
+                        <ul class="station-small2">
+                            <li>特色目的地</li>
+                            <li>精选目的地</li>
+                            <li>著名目的地</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="search-right" style="position: relative">
+                        <span class="search-right-all">全部产品</span>
+                        <img class="down" src="img/img/down.png" alt="" style="position: absolute;top: 22px;left: 72px;">
+                        <ul class="station-small3" style="position: absolute">
+                            <li>热门产品</li>
+                            <li>精选产品</li>
+                            <li>优惠产品</li>
+                        </ul>
+                        <span class="search-right-s">
+                            <img src="img/img/search-icon.png" alt="">
+                        </span>
+                    </div>
+                </li>
+            </ul>
+
+
+        </div>
+        <div class="small-title">
+            旅游 ><span class="small-title-sp">北京旅游</span>
+        </div>
+        <div class="big-menu">
+            <ul class="first-ul">
+                <li class="first-ul-action first-ul-li">
+                    北京旅游
+                </li>
+                <li class="first-ul-li">
+                    出发地参团<span>1596</span>
+                </li>
+                <li class="first-ul-li">
+                    目的地参团<span>698</span>
+                </li>
+                <li class="first-ul-li">
+                    自由行<span>265</span>
+                </li>
+                <li class="first-ul-li">
+                    游轮<span>3</span>
+                </li>
+                <li class="first-ul-li">
+                    酒店|景点<span>1258</span>
+                </li>
+                <li class="first-ul-li">
+                    游学<span>156</span>
+                </li>
+                <li class="first-ul-li">
+                    定制旅游<span>9</span>
+                </li>
+                <li class="first-ul-li">
+                    一日游<span>167</span>
+                </li>
+            </ul>
+        </div>
+        <div class="list-screen">
+            <div class="hasBeenSelected clearfix">
+                <span id="time-num"><font></font></span>
+                <div style="float:right;" class="eliminateCriteria">【清空全部】</div>
+                <dl>
+                    <dt>您的选择：</dt>
+                    <dd style="display:none" class="clearDd">
+                        <div class="clearList"></div>
+                    </dd>
+                </dl>
+                <div class="route-but">
+                    <ul>
+                        <li class="route-submit">
+                            提交
+                        </li>
+                        <li class="route-cancel">
+                            取消
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div style="padding:10px 30px 10px 10px;">
+                <div class="screen-term">
+                    <div class="selectNumberScreen">
+                        <div id="selectList" class="screenBox screenBackground">
+                            <dl class="listIndex">
+                                <dt>行程天数：</dt>
+                                <dd>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">1日</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">2日</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">3日</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">4日</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">5日</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">6日</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">7日</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">8日</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">9日</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">10日</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">11日</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">12日</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">13日</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">14日</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">15日以上</a></label>
+                                </dd>
+                                <span class="duoxuan">多选+</span>
+                            </dl>
+                            <dl class="listIndex">
+                                <dt>出发日期：</dt>
+                                <dd>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">11月</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">12月</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">次年1月</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">2月</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">3月</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">4月</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">5月</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">6月</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">7月</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">8月</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">9月</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">10月</a></label>
+                                    <ul class="route-five">
+                                        <li>最早出发</li>
+                                        <span>~</span>
+                                        <li>最晚出发</li>
+                                        <li>
+                                            <img src="img/img/right.png" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="img/img/wrong.png" alt="">
+                                        </li>
+                                    </ul>
+                                </dd>
+                                <span class="duoxuan">多选+</span>
+                                <div class="close">
+                                    收起 <img src="img/img/close.png" alt="">
+                                </div>
+                            </dl>
+                            <dl class="listIndex">
+                                <dt>出发城市：</dt>
+                                <dd>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">北京</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">天津</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">石家庄</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">济南</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">太原</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">呼和浩特</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">长春</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">深圳</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">上海</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">广州</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">常州</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">舟山</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">惠州</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">杭州</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">淳安</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">珠海</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">苏州</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">固安</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">唐山</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">南京</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">武汉</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">邢台</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">沧州</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">保安</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">承德</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">郑州</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">沈阳</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">邯郸</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">贵阳</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">桂林</a></label>
+                                    <label><input name="radio2" type="radio" value="" /><a href="javascript:;">秦皇</a></label>
+                                </dd>
+                            </dl>
+                            <dl class="listIndex">
+                                <dt>供应商：</dt>
+                                <dd>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">国旅联合发团</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">北京品质旅游</a>
+                                    </label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">悦游北京</a>
+                                    </label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">loong途假期</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">脚尖上的旅游</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">探索发现之旅</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">四海漫游</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">印迹旅行</a></label>
+                                    <label><input name="checkbox2" type="checkbox" value="" /><a href="javascript:;">北京之旅</a></label>
+                                    <span class="more"><em class="open"></em>更多</span>
+                                </dd>
+                                <span class="duoxuan">多选+</span>
+                            </dl>
+                            <dl class="listIndex more-none" style="display:none;border:none">
+                                <dt></dt>
+                                <dd>
+                                    <form action="" method="get">
+                                        <label><input name="checkbox3" type="checkbox" value="" /><a href="javascript:;">精品供应商2</a></label>
+                                        <label><input name="checkbox3" type="checkbox" value="" /><a href="javascript:;">精品供应商3</a>
+                                        </label>
+                                        <label><input name="checkbox3" type="checkbox" value="" /><a href="javascript:;">精品供应商4</a>
+                                        </label>
+                                        <label><input name="checkbox3" type="checkbox" value="" /><a href="javascript:;">精品供应商5</a>
+                                        </label>
+                                        <label><input name="checkbox3" type="checkbox" value="" /><a href="javascript:;">精品供应商6</a>
+                                        </label>
+                                        <label><input name="checkbox3" type="checkbox" value="" /><a href="javascript:;">精品供应商7</a>
+                                        </label>
+                                        <label><input name="checkbox3" type="checkbox" value="" /><a href="javascript:;">精品供应商8</a>
+                                        </label>
+                                        <label><input name="checkbox3" type="checkbox" value="" /><a href="javascript:;">精品供应商9</a>
+                                        </label>
+                                    </form>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript" src="js/shaixuan.js"></script>
+        </div>
+        <div class="travel-box">
+            <div class="travel">
+                <div class="travel-left">
+                    <img src="img/img/pro02_0314_03.jpg">
+                </div>
+                <div class="travel-right">
+                    <div class="travel-right-title" title="【宿古北光】古北水镇2日1晚跟团游·水镇夜景+温泉+老北京涮肉+儿童游乐【宿古北光】古北水镇2日1晚跟团游·水镇夜景+温泉+老北京涮肉+儿童游乐">
+                        【宿古北光】古北水镇2日1晚跟团游·水镇夜景+温泉+老北京涮肉+儿童游乐【宿古北光】古北水镇2日1晚跟团游·水镇夜景+温泉+老北京涮肉+儿童游乐
+                    </div>
+                    <div class="travel-right-smTitle">
+                        <span>无购物</span>
+                        <span>无自费</span>
+                        <span>成员保障</span>
+                        <span>爸妈放心游</span>
+                        <span>北京烤鸭</span>
+                    </div>
+                    <div class="travel-right-places">
+                        <p>
+                            <span class="travel-g">北京出发</span>
+                            5星古北之光温泉酒店住宿+老北京铜锅涮肉+温泉，冬天出游从里到外暖暖的！
+                            <span class="travel-money">$<span class="travel-o">2699</span>起</span>
+                        </p>
+                        <p>
+                            班期：每周二、三、四、五、六、日
+                        </p>
+                        <p>
+                            供应商：由苏打苏塔旅行社 直售，并提供资讯/预定/售后服务
+
+                        </p>
+                        <div class="travel-fen">
+                            <ul>
+                                <li>
+                                    <span>5</span>分
+                                </li>
+                                <li>
+                                    <p>256人出游</p>
+                                    <p>69条点评</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="travel">
+                <div class="travel-left">
+                    <img src="img/img/pro02_0314_03.jpg">
+                </div>
+                <div class="travel-right">
+                    <div class="travel-right-title" title="【宿古北光】古北水镇2日1晚跟团游·水镇夜景+温泉+老北京涮肉+儿童游乐【宿古北光】古北水镇2日1晚跟团游·水镇夜景+温泉+老北京涮肉+儿童游乐">
+                        【宿古北光】古北水镇2日1晚跟团游·水镇夜景+温泉+老北京涮肉+儿童游乐【宿古北光】古北水镇2日1晚跟团游·水镇夜景+温泉+老北京涮肉+儿童游乐
+                    </div>
+                    <div class="travel-right-smTitle">
+                        <span>无购物</span>
+                        <span>无自费</span>
+                        <span>成员保障</span>
+                        <span>爸妈放心游</span>
+                        <span>北京烤鸭</span>
+                    </div>
+                    <div class="travel-right-places">
+                        <p>
+                            <span class="travel-g">北京出发</span>
+                            5星古北之光温泉酒店住宿+老北京铜锅涮肉+温泉，冬天出游从里到外暖暖的！
+                            <span class="travel-money">$<span class="travel-o">2699</span>起</span>
+                        </p>
+                        <p>
+                            班期：每周二、三、四、五、六、日
+                        </p>
+                        <p>
+                            供应商：由苏打苏塔旅行社 直售，并提供资讯/预定/售后服务
+
+                        </p>
+                        <div class="travel-fen">
+                            <ul>
+                                <li>
+                                    <span>5</span>分
+                                </li>
+                                <li>
+                                    <p>256人出游</p>
+                                    <p>69条点评</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="travel">
+                <div class="travel-left">
+                    <img src="img/img/pro02_0314_03.jpg">
+                </div>
+                <div class="travel-right">
+                    <div class="travel-right-title" title="【宿古北光】古北水镇2日1晚跟团游·水镇夜景+温泉+老北京涮肉+儿童游乐【宿古北光】古北水镇2日1晚跟团游·水镇夜景+温泉+老北京涮肉+儿童游乐">
+                        【宿古北光】古北水镇2日1晚跟团游·水镇夜景+温泉+老北京涮肉+儿童游乐【宿古北光】古北水镇2日1晚跟团游·水镇夜景+温泉+老北京涮肉+儿童游乐
+                    </div>
+                    <div class="travel-right-smTitle">
+                        <span>无购物</span>
+                        <span>无自费</span>
+                        <span>成员保障</span>
+                        <span>爸妈放心游</span>
+                        <span>北京烤鸭</span>
+                    </div>
+                    <div class="travel-right-places">
+                        <p>
+                            <span class="travel-g">北京出发</span>
+                            5星古北之光温泉酒店住宿+老北京铜锅涮肉+温泉，冬天出游从里到外暖暖的！
+                            <span class="travel-money">$<span class="travel-o">2699</span>起</span>
+                        </p>
+                        <p>
+                            班期：每周二、三、四、五、六、日
+                        </p>
+                        <p>
+                            供应商：由苏打苏塔旅行社 直售，并提供资讯/预定/售后服务
+
+                        </p>
+                        <div class="travel-fen">
+                            <ul>
+                                <li>
+                                    <span>5</span>分
+                                </li>
+                                <li>
+                                    <p>256人出游</p>
+                                    <p>69条点评</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="travel">
+                <div class="travel-left">
+                    <img src="img/img/pro02_0314_03.jpg">
+                </div>
+                <div class="travel-right">
+                    <div class="travel-right-title" title="【宿古北光】古北水镇2日1晚跟团游·水镇夜景+温泉+老北京涮肉+儿童游乐【宿古北光】古北水镇2日1晚跟团游·水镇夜景+温泉+老北京涮肉+儿童游乐">
+                        【宿古北光】古北水镇2日1晚跟团游·水镇夜景+温泉+老北京涮肉+儿童游乐【宿古北光】古北水镇2日1晚跟团游·水镇夜景+温泉+老北京涮肉+儿童游乐
+                    </div>
+                    <div class="travel-right-smTitle">
+                        <span>无购物</span>
+                        <span>无自费</span>
+                        <span>成员保障</span>
+                        <span>爸妈放心游</span>
+                        <span>北京烤鸭</span>
+                    </div>
+                    <div class="travel-right-places">
+                        <p>
+                            <span class="travel-g">北京出发</span>
+                            5星古北之光温泉酒店住宿+老北京铜锅涮肉+温泉，冬天出游从里到外暖暖的！
+                            <span class="travel-money">$<span class="travel-o">2699</span>起</span>
+                        </p>
+                        <p>
+                            班期：每周二、三、四、五、六、日
+                        </p>
+                        <p>
+                            供应商：由苏打苏塔旅行社 直售，并提供资讯/预定/售后服务
+
+                        </p>
+                        <div class="travel-fen">
+                            <ul>
+                                <li>
+                                    <span>5</span>分
+                                </li>
+                                <li>
+                                    <p>256人出游</p>
+                                    <p>69条点评</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="travel">
+                <div class="travel-left">
+                    <img src="img/img/pro02_0314_03.jpg">
+                </div>
+                <div class="travel-right">
+                    <div class="travel-right-title" title="【宿古北光】古北水镇2日1晚跟团游·水镇夜景+温泉+老北京涮肉+儿童游乐【宿古北光】古北水镇2日1晚跟团游·水镇夜景+温泉+老北京涮肉+儿童游乐">
+                        【宿古北光】古北水镇2日1晚跟团游·水镇夜景+温泉+老北京涮肉+儿童游乐【宿古北光】古北水镇2日1晚跟团游·水镇夜景+温泉+老北京涮肉+儿童游乐
+                    </div>
+                    <div class="travel-right-smTitle">
+                        <span>无购物</span>
+                        <span>无自费</span>
+                        <span>成员保障</span>
+                        <span>爸妈放心游</span>
+                        <span>北京烤鸭</span>
+                    </div>
+                    <div class="travel-right-places">
+                        <p>
+                            <span class="travel-g">北京出发</span>
+                            5星古北之光温泉酒店住宿+老北京铜锅涮肉+温泉，冬天出游从里到外暖暖的！
+                            <span class="travel-money">$<span class="travel-o">2699</span>起</span>
+                        </p>
+                        <p>
+                            班期：每周二、三、四、五、六、日
+                        </p>
+                        <p>
+                            供应商：由苏打苏塔旅行社 直售，并提供资讯/预定/售后服务
+
+                        </p>
+                        <div class="travel-fen">
+                            <ul>
+                                <li>
+                                    <span>5</span>分
+                                </li>
+                                <li>
+                                    <p>256人出游</p>
+                                    <p>69条点评</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--分页器-->
+            <div id="app">
+                <div>
+                    <div class="page" v-show="show">
+                        <div class="pagelist">
+                            <span class="jump" :class="{disabled:pstart}" @click="{current_page--}">上一页</span>
+                            <span v-show="current_page>5" class="jump" @click="jumpPage(1)">1</span>
+                            <span class="ellipsis" v-show="efont">...</span>
+                            <span class="jump" v-for="num in indexs" :class="{bgprimary:current_page==num}" @click="jumpPage(num)">{{num}}</span>
+                            <span class="ellipsis" v-show="ebehind">...</span>
+
+                            <span :class="{disabled:pend}" class="jump" @click="{current_page++}">下一页</span>
+                            <span v-show="current_page<pages-4" class="jump" @click="jumpPage(pages)">{{pages}}</span>
+
+                            <span class="jumppoint">到：</span>
+                            <span class="jumpinp"><input type="text" v-model="changePage">页</span>
+                            <span class="jump gobtn" @click="jumpPage(changePage)">确定</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footerOne">
+            <div class="footer-container">
+                <div class="footerone-left">
+                    <h4>下载<img src="img/icon/logo74×34.png" alt="" />手机客户端</h4>
+                    <span>
+                        特价机票、一折酒店、出行安全保障、预约担保最佳旅行路线、吃喝玩乐一掌在手
+                    </span>
+                    <span>
+                        立刻下载
+                    </span>
+                </div>
+                <div class="footerone-right">
+                    <div class="fright-one">
+                        <img src="img/img/erweima_1126.jpg" alt="" />
+                        <span>微信公众平台</span>
+                    </div>
+                    <div class="fright-two">
+                        <img src="img/img/erweima_1126.jpg" alt="" />
+                        <span>App下载</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerTwo">
+            <div class="footer-container">
+                <div class="footertwo-one">
+                    <div class="ftwo-left">
+                        <ul class="ftwo-left-list">
+                            <li>
+                                <img src="img/icon/i_serve_11.png" alt="" />
+                                <h4>贴心的服务</h4>
+                                <p>业内领先服务标准 用户保障系统</p>
+                            </li>
+                            <li>
+                                <img src="img/icon/i_price_11.png" alt="" />
+                                <h4>优质的价格</h4>
+                                <p>极具竞争力的价格 无任何隐形消费</p>
+                            </li>
+                            <li>
+                                <img src="img/icon/i_num_11.png" alt="" />
+                                <h4>4008-xxx-6666</h4>
+                                <p>24小时客服热线 无时不刻在您身边</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ftwo-right">
+                        <ul class="footer-list">
+                            <li>
+                                <h5>旅游资讯</h5>
+                            </li>
+                            <li>
+                                <span>宾馆索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;攻略索引</span>
+                            </li>
+                            <li>
+                                <span>机票索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网站导航</span>
+                            </li>
+                            <li>
+                                <span>旅游索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;火车票索引</span>
+                            </li>
+                            <li>
+                                <span>邮轮索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用车索引</span>
+                            </li>
+                            <li>
+                                <span>企业差旅索引</span>
+                            </li>
+                        </ul>
+                        <ul class="footer-list">
+                            <li>
+                                <h5>加盟合作</h5>
+                            </li>
+                            <li>
+                                <span>宾馆索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;攻略索引</span>
+                            </li>
+                            <li>
+                                <span>机票索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网站导航</span>
+                            </li>
+                            <li>
+                                <span>旅游索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;火车票索引</span>
+                            </li>
+                            <li>
+                                <span>邮轮索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用车索引</span>
+                            </li>
+                            <li>
+                                <span>企业差旅索引</span>
+                            </li>
+                        </ul>
+                        <ul class="footer-list">
+                            <li>
+                                <h5>关于我们</h5>
+                            </li>
+                            <li>
+                                <span>宾馆索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;攻略索引</span>
+                            </li>
+                            <li>
+                                <span>机票索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网站导航</span>
+                            </li>
+                            <li>
+                                <span>旅游索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;火车票索引</span>
+                            </li>
+                            <li>
+                                <span>邮轮索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用车索引</span>
+                            </li>
+                            <li>
+                                <span>企业差旅索引</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footertwo-two">
+                    <p>Copyright©1999-2016, ctrip.com. All rights reserved. | ICP证：沪B2-200501xx</p>
+                    <p><img src="img/icon/hui1126.png" alt="" />沪公网备310105020000xx号</p>
+                    <p>旅游违法行为举报电话12318 丨服务质量投诉电话 962020 丨北京市旅游网站落实诚信建设主体责任承诺书</p>
+                    <div class="bottom-pic">
+                        <img src="img/icon/icon1126_11.jpg" alt="" />
+                        <img src="img/icon/icon1126_13.jpg" alt="" />
+                        <img src="img/icon/icon1126_15.jpg" alt="" />
+                        <img src="img/icon/icon1126_17.jpg" alt="" />
+                        <img src="img/icon/icon1126_19.jpg" alt="" />
+                        <img src="img/icon/icon1126_21.jpg" alt="" />
+                        <img src="img/icon/icon1126_23.jpg" alt="" />
+                        <img src="img/icon/icon1126_25.jpg" alt="" />
+                        <img src="img/icon/icon1126_27.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/header.js"></script>
+    <script src="js/search-jq.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+
+</html>

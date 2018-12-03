@@ -1,0 +1,487 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    min-width: 1200px;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+/*头部样式*/
+.header-img{
+    border-bottom: 1px solid #ccc;
+}
+.header-img>img{
+    width: 215px;
+    margin-left: 28px;
+}
+/*主体内容*/
+section:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+/*左侧内容*/
+.section-left{
+    width: 700px;
+    float: left;
+    padding-top: 160px;
+}
+.section-left:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+section>.section-left>.section-left-img{
+    float: left;
+    margin-left: 28px;
+    margin-right: 30px;
+}
+section>.section-left>.section-left-img>img{
+    width: 252px;
+}
+section>.section-left>.section-left-black{
+    padding-top: 50px;
+}
+section>.section-left>.section-left-black>.section-left-black1>p{
+    font-size: 24px;
+    color:#1a479c;
+}
+section>.section-left>.section-left-black>.section-left-black1>p>img{
+      width: 69px;
+    vertical-align: middle;
+}
+section>.section-left>.section-left-black>.section-left-black1>p:nth-of-type(1){
+    margin-bottom: 10px;
+}
+section>.section-left>.section-left-black>.section-left-black1>p:nth-of-type(2){
+    margin-bottom: 40px;
+}
+section>.section-left>.section-left-black>.section-left-black2>li{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color:#929292;
+}
+/*右侧内容*/
+section:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.section-right{
+    width: 500px;
+    float: left;
+    position: relative;
+}
+.section-right>.section-right-box{
+    background-color: #eeeeee;
+    padding: 0 20px;
+    padding-top: 70px;
+}
+.section-right>.section-right-box>.section-right-box-title{
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 5px;
+    text-align: center;
+    /*position: relative;*/
+}
+.section-right>img{
+    position: absolute;
+    top: 0px;right: 0px;
+}
+.section-right>.section-right-box>.section-right-box-title>p{
+    font-size:24px;
+}
+
+.section-right>.section-right-box>.section-right-box-title>p>span{
+    font-size:14px ;
+    margin-left: 40px;
+}
+.section-right>.section-right-box>.section-right-box-title>p>span>a{
+    font-size:14px ;
+    color: #1a479c;
+}
+.section-right>.section-right-box>.section-right-box-icon{
+    text-align: center;
+}
+.section-right>.section-right-box>.section-right-box-icon>input{
+     margin-top:40px;
+     margin-bottom: 30px;
+     margin-right: 5px;
+ }
+.section-right>.section-right-box>.section-right-box-icon>input:nth-of-type(2){
+  margin-left: 50px;
+
+}
+.section-right>.section-right-box>.section-right-box-icon>#con1{
+    font-size: 16px;
+}
+.section-right>.section-right-box>.section-right-box-icon>#con2{
+    font-size: 12px;
+}
+/*表单1*/
+.section-right>.section-right-box>.section-right-form1{
+    text-align: center;
+
+    /*display: none;*/
+}
+/*输入框*/
+.section-right>.section-right-box>.section-right-form1>.section-right-form1-row1{
+    position: relative;
+}
+.section-right>.section-right-box>.section-right-form1>.section-right-form1-row1>input{
+    width: 380px;
+    height: 40px;
+    padding-left: 70px;
+    margin-bottom: 30px;
+}
+.section-right>.section-right-box>.section-right-form1>.section-right-form1-row1>span{
+    width: 50px;
+    height: 30px;
+    display: inline-block;
+    background: url("../imgss/yonghuming.png")no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    border-right: 1px solid #a0a0a0;
+}
+.section-right>.section-right-box>.section-right-form1>.section-right-form1-row1>input::-webkit-input-placeholder{
+    font-size: 18px;
+    color:#a9a9a9;
+}
+/*密码框*/
+.section-right>.section-right-box>.section-right-form1>.section-right-form1-row2{
+    position: relative;
+}
+.section-right>.section-right-box>.section-right-form1>.section-right-form1-row2>input{
+    width: 380px;
+    height: 40px;
+    padding-left: 70px;
+    margin-bottom: 30px;
+}
+.section-right>.section-right-box>.section-right-form1>.section-right-form1-row2>span{
+    width: 50px;
+    height: 30px;
+    display: inline-block;
+    background: url("../imgss/mima.png")no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    border-right: 1px solid #a0a0a0;
+}
+.section-right>.section-right-box>.section-right-form1>.section-right-form1-row1>input::-webkit-input-placeholder{
+    font-size: 18px;
+    color:#a9a9a9;
+}
+/*验证码*/
+
+.section-right>.section-right-box>.section-right-form1>.section-right-form1-row3{
+    padding-bottom: 30px;
+    position: relative;
+}
+.section-right>.section-right-box>.section-right-form1>.section-right-form1-row3>input{
+    width: 180px;
+    height: 40px;
+    padding-left: 20px;
+    margin-right: 45px;
+
+}
+.section-right>.section-right-box>.section-right-form1>.section-right-form1-row3>input::-webkit-input-placeholder{
+    font-size: 18px;
+    color:#a9a9a9;
+}
+.section-right>.section-right-box>.section-right-form1>.section-right-form1-row3>input,img{
+    vertical-align: middle;
+}
+.section-right>.section-right-box>.section-right-form1>.section-right-form1-row3>a{
+    color:#1a479c;
+    font-size: 14px;
+    position: absolute;
+    right: -10px;
+    top: 10px;
+}
+/*自动登录*/
+.section-right>.section-right-box>.section-right-form1>.section-right-form1-row4{
+    margin-bottom: 20px;
+}
+.section-right>.section-right-box>.section-right-form1>.section-right-form1-row4>input{
+    margin-right: 10px;
+}
+.section-right>.section-right-box>.section-right-form1>.section-right-form1-row4>span>a{
+    margin-left: 160px;
+    color:#1a479c;
+}
+/*登录*/
+.section-right>.section-right-box>.section-right-form1>.section-right-form1-row5>input{
+    background-color:#f19149;
+    color: #fff;
+    font-size: 24px;
+    width: 380px;
+    height: 40px;
+    letter-spacing: 80px;
+    text-indent: 80px;
+    margin-bottom: 40px;
+    border: 0;
+}
+.section-right>.section-right-box>.section-right-form1>.section-right-form1-row5>input:hover{
+    background-color:#eb6100;
+}
+/*表单尾部*/
+.section-right>.section-right-box>.section-right-box-footer>.section-right-box-footer-list{
+    margin-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.section-right>.section-right-box>.section-right-box-footer>a{
+    font-size: 14px;
+    color: #3255a1;
+    margin-left: 35px;
+}
+.section-right>.section-right-box>.section-right-box-footer>.section-right-box-footer-list>ul>li>img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.section-right>.section-right-box>.section-right-box-footer>.section-right-box-footer-list>ul>li{
+    font-size: 14px;
+    display:inline;
+    margin: 0 15px;
+}
+.section-right1>a{
+    text-decoration:none;
+    margin-left: 20px;
+}
+.section-right1>.section-right1-list>ul>li>img{
+
+}
+.section-right1>.section-right1-list>ul{
+    margin-top: 20px;
+}
+.section-right1>.section-right1-list>ul>li{
+    font-size: 14px;
+    list-style: none;
+    display:inline;
+    margin: 0 15px;
+}
+/*表单2*/
+.section-right>.section-right-box>.section-right-form2{
+    text-align: center;
+    display: none;
+}
+/*输入框*/
+.section-right>.section-right-box>.section-right-form2>.section-right-form2-row1{
+   position: relative;
+}
+
+.section-right>.section-right-box>.section-right-form2>.section-right-form2-row1>span{
+    width: 50px;
+    height: 30px;
+    display: inline-block;
+    background: url("../imgss/yonghuming.png")no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    border-right: 1px solid #a0a0a0;
+}
+.section-right>.section-right-box>.section-right-form2>.section-right-form2-row1>input{
+    width: 380px;
+    height: 40px;
+    padding-left: 70px;
+    margin-bottom: 30px;
+}
+.section-right>.section-right-box>.section-right-form2>.section-right-form2-row1>input::-webkit-input-placeholder{
+    font-size: 18px;
+    color:#a9a9a9;
+}
+/*动态密码框*/
+.section-right>.section-right-box>.section-right-form2>.section-right-form2-row2{
+    position: relative;
+}
+.section-right>.section-right-box>.section-right-form2>.section-right-form2-row2>.section-right-form2-row2-img1{
+    width: 50px;
+    height: 30px;
+    display: inline-block;
+    background: url("../imgss/mima.png")no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    border-right: 1px solid #a0a0a0;
+}
+.section-right>.section-right-box>.section-right-form2>.section-right-form2-row2>input{
+    width: 200px;
+    height: 40px;
+    padding-left: 70px;
+    margin-bottom: 30px;
+}
+.section-right>.section-right-box>.section-right-form2>.section-right-form2-row2>input::-webkit-input-placeholder{
+    font-size: 18px;
+    color:#a9a9a9;
+}
+.section-right>.section-right-box>.section-right-form2>.section-right-form2-row2>.section-right-form2-row2-img2{
+    width: 150px;
+    height: 30px;
+    background-color:#00a0e9;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 3px 17px;
+    margin-left:25px;
+
+    border: 0px;
+}
+/*自动登录*/
+.section-right>.section-right-box>.section-right-form2>.section-right-form2-row3{
+    margin-bottom: 20px;
+}
+.section-right>.section-right-box>.section-right-form2>.section-right-form2-row3>input{
+    margin-right: 10px;
+}
+.section-right>.section-right-box>.section-right-form2>.section-right-form2-row3>span>a{
+    margin-left: 160px;
+    color:#1a479c;
+}
+/*登录*/
+.section-right>.section-right-box>.section-right-form2>.section-right-form2-row4>input{
+    background-color:#f19149;
+    color: #fff;
+    font-size: 24px;
+    width: 380px;
+    height: 40px;
+    letter-spacing: 80px;
+    text-indent: 80px;
+    margin-bottom: 40px;
+    border: 0;
+}
+.section-right>.section-right-box>.section-right-form2>.section-right-form2-row4>input:hover{
+    background-color:#eb6100;
+}
+/*3扫码登录*/
+.section-right-form3{
+    background-color: #eeeeee;
+    padding-bottom: 110px;
+    position: absolute;
+    top:0px;
+    right:0;
+    width: 500px;
+    height:100%;
+    display: none;
+}
+.section-right-form3>img{
+    position: absolute;
+    right: 0px;
+}
+.section-right-form3>p{
+    font-size:24px;
+    padding-left: 40px;
+    font-weight: bold;
+    padding-top:60px;
+}
+.section-right-form3>.section-right-form3-img{
+    margin-top: 70px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.section-right-form3>.section-right-form3-img>img{
+    width: 270px;
+    height: 269px;
+}
+.section-right-form3>.section-right-form3-img2>img:nth-of-type(1){
+    width: 219px;
+    position: absolute;
+    top: 150px;
+    right: 150px;
+    animation: jump 1s ease  alternate forwards;
+}
+@keyframes jump {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-240px);
+    }
+}
+.section-right-form3>.section-right-form3-img2>img:nth-of-type(2){
+    position: absolute;
+    top: 172px;
+    right: 196px;
+    animation: jump2 1s ease  alternate forwards;
+}
+@keyframes jump2 {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-240px);
+    }
+}
+
+.section-right-form3>.section-right-form3-cn{
+    text-align: center;
+}
+.section-right-form3>.section-right-form3-cn>a{
+    color:#f19553;
+    font-size: 18px;
+    text-decoration:none;
+}
+.section-right-form3>.section-right-form3-cn>p {
+    font-size: 16px;
+    margin-top: 19px;
+}
+.section-right-form3>.section-right-form3-cn>p>a{
+    color: #4c6eaf;
+}
+.section-right-form3>.section-right-form3-cn>p>a:hover{
+    color: #f27902;
+}
+/*网页尾部*/
+footer{
+    border-top: 1px solid #ccc;;
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+.footer-cn{
+    text-align: center;
+    padding-bottom: 15px;
+}
+.footer-cn>p{
+    font-size: 12px;
+    line-height: 24px;
+    color: #b8b8b8;
+}
+.footer-cn>p>img{
+    vertical-align: middle;
+    margin-right: 5px
+}
+footer>.footer-list{
+    text-align: center;
+}
+footer>.footer-list>ul>li{
+    list-style: none;
+    margin: 0 5px;
+    display:inline;
+}
+/*验证*/
+/*错误图*/
+.active1{
+    background:url(../imgss/cuowutishi.png) no-repeat 10px 5px;
+    -webkit-background-size: 20px;
+    background-size: 28px;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:40px ;
+    margin-left: 39px;
+    color: #302f2f;
+    font-size:12px;
+    border: 1px solid #ec6941;
+    background-color: #fdf9c7;
+    width: 380px;
+    height: 37px;
+}

@@ -1,0 +1,80 @@
+/**
+ * Created by lenovo on 2018/8/31.
+ */
+$(function(){
+    $(".twocont-list").find("li").hover(
+       function(){
+           $(".twocont-list").find("li").removeClass("twolist-active");
+            $(this).css("top","-10px");
+           $(this).addClass("twolist-active");
+       },
+        function(){
+            $(this).removeClass("twolist-active");
+            $(this).css("top","0px");
+        }
+    )
+    $(".threeright-list").find("li").hover(
+        function(){
+            $(".threeright-list").find("li").removeClass("threeli-active");
+            $(this).addClass("threeli-active");
+            $(this).find("a").css("color","#fff");
+        },
+        function(){
+            $(this).removeClass("threeli-active");
+            $(this).find("a").css("color","#000");
+        }
+    )
+    $(".middle-inputone").click(function(e){
+        event.stopPropagation();
+        event.cancelBubble=true;
+        $(".onelist-lithree").css("display","block");
+        $(".onelist-lione").css("display","none");
+        $(".onelist-litwo").css("display","none");
+        $(".onelist-lifour").css("display","none");
+        $(".onelist-lifive").css("display","none");
+        $(".sectwo-lithree").css("display","none");
+        $(".sectwo-lifour").css("display","none");
+        $(".sectwo-lifive").css("display","none");
+    })
+    $(".middle-inputtwo").click(function(e){
+        event.stopPropagation();
+        event.cancelBubble=true;
+        $(".onelist-lifour").css("display","block");
+        $(".onelist-lione").css("display","none");
+        $(".onelist-litwo").css("display","none");
+        $(".onelist-lithree").css("display","none");
+        $(".onelist-lifive").css("display","none");
+        $(".sectwo-lithree").css("display","none");
+        $(".sectwo-lifour").css("display","none");
+        $(".sectwo-lifive").css("display","none");
+    })
+    $(".onelist-lithree").click(function(){
+        event.stopPropagation();
+        event.cancelBubble=true;
+    })
+    $(".onelist-lifour").click(function(){
+        event.stopPropagation();
+        event.cancelBubble=true;
+    })
+    $(".lithree-close-three").click(function(){
+        $(".onelist-lithree").css("display","none");
+    })
+    $(".lithree-close-four").click(function(){
+        $(".onelist-lifour").css("display","none");
+    })
+    $(".lithree-two-three").find("li").click(function(){
+        var liCont=$(this).html();
+        $(".middle-inputone").val(liCont);
+        $(".onelist-lithree").css("display","none");
+    })
+    $(".lithree-two-four").find("li").click(function(){
+        var liCont=$(this).html();
+        $(".middle-inputtwo").val(liCont);
+        $(".onelist-lifour").css("display","none");
+    })
+    $(document).click(function(){
+        $(".onelist-lithree").css("display","none");
+        $(".onelist-lifour").css("display","none");
+    })
+
+})

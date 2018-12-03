@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <!--轮播图-->
+    <link rel="stylesheet" href="css/index-zhuye.css">
+    <link rel="stylesheet" href="css/style-header.css" />
+    <link rel="stylesheet" href="css/style-footer.css" />
+    <link rel="stylesheet" href="icomoon-index/style.css" />
+    <link rel="stylesheet" href="css/swiper-4.3.5.min.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="fixed-icon/style.css">
+    <link rel="stylesheet" href="css/fixed.css">
+    <link rel="stylesheet" href="icomoon-pentagon1/style.css">
+</head>
+<style>
+    .header-tit{
+        margin-top: -2px;
+
+    }
+    .headertwo-right{
+        margin-left: 321px;
+        margin-top: 2px;
+    }
+</style>
+<body>
+    <header>
+        <div class="headerOne">
+            <div class="header-container">
+                <img class="header-logo" src="img/icon/logo74×34.png" alt="" />
+                <div class="headerOne-right">
+                    <span>客服中心&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;24小时热线：400-xxx-6666</span>
+                    <span class="icon-mobile header-phone"></span>
+                    <span class="icon-WeChat header-wechat"></span>
+                    <div class="phone-hover">
+                        <div class="triangle-border-up">
+                        </div>
+                        <div class="hover-cont">
+                            <img src="img/img/erweima_1126.jpg" alt="" />
+                            <span>手机扫码快速下载</span>
+                            <span>App享受最多50%优惠力度</span>
+                        </div>
+                    </div>
+                    <div class="wechat-hover">
+                        <div class="triangle-border-up">
+                        </div>
+                        <div class="hover-cont">
+                            <img src="img/img/erweima_1126.jpg" alt="" />
+                            <span>i旅行微信公众号:</span>
+                            <span class="ilvxing">ilvxing</span>
+                            <span>手机扫一扫，享受专属福利</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headerTwo">
+            <div class="header-container">
+                <ul class="header-tit">
+                    <!--<ul class="header-tit">-->
+                        <li class="header-active"><a href="index.html"><img src="img/icon/li-1.png" alt="" /><span>首页</span></a></li>
+                        <li><a href="travel.html"><img src="img/icon/li-2.png" alt="" /><span>旅游</span></a></li>
+                        <li><a href="hotel1.html"><img src="img/icon/li-3.png" alt="" /><span>酒店</span></a></li>
+                        <li><a href="8index.html"><img src="img/icon/li-4.png" alt="" /><span>机票</span></a></li>
+                        <li><a href="search2.html"><img src="img/icon/li-5.png" alt="" /><span>门票</span></a></li>
+                        <li ><a href="Chendu.html"><img src="img/icon/li-6.png" alt="" /><span>攻略</span></a></li>
+                    </ul>
+                    <div class="headertwo-right">
+                        <img src="icon/user.png" alt="" />
+                        <span>
+                            <a href="denglu-12.html">登录</a>
+                            |
+                            <a href="zhuce-13.html">注册</a>
+                        </span>
+                    </div>
+            </div>
+        </div>
+    </header>
+    <div class="header-banner-container">
+        <!--轮播图-->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/img/i_banner_01.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/img/i_banner_02.jpg">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/img/i_banner_03.jpg">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- 入驻日期 -->
+        <div class="header-banner">
+
+            <!--左边nav-->
+            <div class="leftNav">
+                <!--左边nav列表-->
+                <ul>
+                    <!--旅游-->
+                    <li class="header-form-action">
+                        <div class="fj color">
+                            <span class="fl">旅游</span>
+                        </div>
+                        <!--列表内容-->
+                        <div class="zj" style="top: -1px">
+                            <div class="header-form-right-title">
+                                <ul>
+                                    <li class="header-smallTitle"><a href="javascrpt:;">特卖会</a></li>
+                                    <li><a href="javascrpt:;">出境旅游</a></li>
+                                    <li><a href="javascrpt:;">国内旅游</a></li>
+                                </ul>
+                            </div>
+                            <div class="header-input1" style="margin-left: 28px">
+                                目的地<input type="text" placeholder="三亚">
+                            </div>
+                            <div class="header-input">
+                                入住时间
+                                <input id="d4311" class="Wdate" type="text" onclick="WdatePicker({minDate:'%y-%M-%d'})" />
+                                <span class="checkOut">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;退房时间</span>
+                                <input id="d4312" class="Wdate" type="text" onclick="WdatePicker({minDate:'%y-%M-{%d+1}'})" />
+                            </div>
+                            <div class="header-input">
+                                酒店级别
+                                <select>
+                                    <option value="">不限</option>
+                                    <option value="">二星级酒店</option>
+                                    <option value="">三星级酒店</option>
+                                    <option value="">四星级酒店</option>
+                                    <option value="">五星级酒店</option>
+                                </select>
+                                <!-- 酒店级别<input type="text" class="hotel" placeholder="不限">
+                            <div class="hfrc-btn">
+                                <span class="triangle_border_down"></span>
+                            </div>
+                            <div class="hotel-hidden">
+                                <ul class="hotel-hidden-ul">
+                                    <li class="hotel-hidden-li">
+                                        不限
+                                    </li>
+                                    <li class="hotel-hidden-li">
+                                        五星级|豪华
+                                    </li>
+                                    <li class="hotel-hidden-li">
+                                       四星级|高档
+                                    </li>
+                                    <li class="hotel-hidden-li">
+                                        三星级|舒适
+                                    </li>
+                                    <li class="hotel-hidden-li">
+                                        二星级及其他
+                                    </li>
+                                </ul>
+                            </div> -->
+                            </div>
+                            <div class="header-input1">
+                                关键词<input type="text" class="places" placeholder="海岛">
+                                <p>
+                                    <a href="javascrpt:;">温泉</a>、
+                                    <a href="javascrpt:;">亲子</a>、
+                                    <a href="javascrpt:;">自由行</a>、
+                                    <a href="javascrpt:;">名胜古迹</a>、
+                                    <a href="javascrpt:;">都市购物</a>
+                                </p>
+                            </div>
+                            <div class="header-input">
+                                <a href="javascript:;"><span class="findProcess">搜索进程></span></a>
+                            </div>
+                        </div>
+                    </li>
+                    <!--酒店-->
+                    <li>
+                        <div class="fj">
+                            <span class="fl">酒店</span>
+                        </div>
+                        <div class="zj" style="top:-61px;display: none;">
+                            <div class="header-form-right-title2">
+                                <ul>
+                                    <li class="header-smallTitle2"><a href="javascrpt:;">国内酒店</a></li>
+                                    <li><a href="javascrpt:;">海外酒店</a></li>
+                                    <li><a href="javascrpt:;">酒店团购</a></li>
+                                </ul>
+                            </div>
+                            <div class="header-input1" style="margin-left: 28px">
+                                目的地<input type="text" placeholder="三亚">
+                            </div>
+                            <div class="header-input">
+                                入住时间
+                                <input id="d4309" class="Wdate" type="text" onclick="WdatePicker({minDate:'%y-%M-%d'})" />
+                                <span class="checkOut">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;退房时间</span>
+                                <input id="d4310" class="Wdate" type="text" onclick="WdatePicker({minDate:'%y-%M-{%d+1}'})" />
+                            </div>
+                            <div class="header-input">
+                                酒店级别
+                                <select>
+                                    <option value="">不限</option>
+                                    <option value="">二星级酒店</option>
+                                    <option value="">三星级酒店</option>
+                                    <option value="">四星级酒店</option>
+                                    <option value="">五星级酒店</option>
+                                </select>
+                            </div>
+                            <div class="header-input1">
+                                关键词<input type="text" class="places" placeholder="海岛">
+                                <p>
+                                    <a href="javascrpt:;">温泉</a>、
+                                    <a href="javascrpt:;">亲子</a>、
+                                    <a href="javascrpt:;">自由行</a>、
+                                    <a href="javascrpt:;">名胜古迹</a>、
+                                    <a href="javascrpt:;">都市购物</a>
+                                </p>
+                            </div>
+                            <div class="header-input">
+                                <span class="findProcess">搜索进程></span>
+                            </div>
+                        </div>
+                    </li>
+                    <!--机票-->
+                    <li>
+                        <div class="fj">
+                            <span class="fl">机票</span>
+                        </div>
+                        <div class="zj" style="top:-121px;display: none;">
+                            <div class="header-form-right-title3">
+                                <ul>
+                                    <li class="header-smallTitle3"><a href="javascrpt:;">国内机票</a></li>
+                                    <li><a href="javascrpt:;">国际机票</a></li>
+                                    <li><a href="javascrpt:;">发现低价</a></li>
+                                </ul>
+                            </div>
+                            <div class="header-input" style="margin-left: 20px">
+                                <div class="header-input-radio">
+                                    航程类型<input type="radio" checked name="flight" id="simgle"><label for="simgle">单程</label>
+                                    <input type="radio" name="flight" id="back"><label for="back">往返</label>
+                                    <input type="radio" name="flight" id="much"><label for="much">多程</label>
+                                </div>
+                            </div>
+                            <div class="header-input">
+                                出发城市
+                                <input type="text" class="city" placeholder="北京"> 第一程日期
+                                <input id="d4307" class="Wdate" type="text" onclick="WdatePicker({minDate:'%y-%M-%d'})" />
+                            </div>
+                            <div class="header-input">
+                                中转城市
+                                <input type="text" class="city" placeholder="上海"> 第二程日期
+                                <input id="d4318" class="Wdate" type="text" onclick="WdatePicker({minDate:'%y-%M-{%d+1}'})" />
+                            </div>
+                            <div class="header-input">
+                                到达城市<input type="text" class="places" placeholder="广州">
+                                <p>
+                                    <a href="javascrpt:;">温泉</a>、
+                                    <a href="javascrpt:;">亲子</a>、
+                                    <a href="javascrpt:;">自由行</a>、
+                                    <a href="javascrpt:;">名胜古迹</a>、
+                                    <a href="javascrpt:;">都市购物</a>
+                                </p>
+                            </div>
+                            <div class="header-input">
+                                <span class="findProcess">搜索进程></span>
+                            </div>
+                        </div>
+                    </li>
+                    <!--门票-->
+                    <li>
+                        <div class="fj">
+                            <span class="fl">门票</span>
+                        </div>
+                        <div class="zj" style="top:-181px;display: none;">
+                            <div class="header-input3" style="margin-top: 30px">
+                                热门城市：<a href="#">上海</a><a href="#">广州</a><a href="#">深圳</a><a href="#">北京</a><a href="#">杭州</a><a
+                                    href="#">苏州</a><a href="#">青岛</a>
+                            </div>
+                            <div class="header-input3">
+                                热门活动：<a href="#">门票特权日</a><a href="#">早秋赏景</a><a href="#">国庆提前定</a><a href="#">旅游WiFi</a><a
+                                    href="#">日本旅行卡</a>
+                            </div>
+                            <div class="header-input3">
+                                热门团购：<a href="#">度假公寓</a><a href="#">别墅轰趴</a><a href="#">住店游玩</a><a href="#">情侣酒店</a><a href="#">火车票专享</a>
+                            </div>
+                            <div class="header-input3" style="border-bottom: 1px #CCCCCC solid;padding-bottom: 40px">
+                                热门推荐：<a href="#">北方盐湖城</a><a href="#">长隆海洋王国</a><a href="#">圆明园</a><a href="#">印象武隆</a>
+                            </div>
+                            <div class="header-input1">
+                                关键词<input type="text" class="places" placeholder="(选填)商圈/景区/酒店品牌/酒店名称/关键字">
+                            </div>
+                            <div class="header-input1">
+                                目的地<input type="text" class="places" placeholder="海岛">
+                            </div>
+                            <div class="header-input">
+                                <span class="findProcess">搜索进程></span>
+                            </div>
+                        </div>
+                    </li>
+                    <!--攻略-->
+                    <li>
+                        <div class="fj">
+                            <span class="fl">攻略</span>
+                        </div>
+                        <div class="zj" style="top:-241px;display: none;">
+                            <div class="header-input3" style="margin-top: 30px">
+                                热门城市：<a href="#">上海</a><a href="#">广州</a><a href="#">深圳</a><a href="#">北京</a><a href="#">杭州</a><a
+                                    href="#">苏州</a><a href="#">青岛</a>
+                            </div>
+                            <div class="header-input3">
+                                热门活动：<a href="#">门票特权日</a><a href="#">早秋赏景</a><a href="#">国庆提前定</a><a href="#">旅游WiFi</a><a
+                                    href="#">日本旅行卡</a>
+                            </div>
+                            <div class="header-input3">
+                                热门团购：<a href="#">度假公寓</a><a href="#">别墅轰趴</a><a href="#">住店游玩</a><a href="#">情侣酒店</a><a href="#">火车票专享</a>
+                            </div>
+                            <div class="header-input3">
+                                热门推荐：<a href="#">北方盐湖城</a><a href="#">长隆海洋王国</a><a href="#">圆明园</a><a href="#">印象武隆</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="p1">
+        <!-- 北京出发下来框 -->
+        <div class="content1-head-wrap">
+            <div class="content1-head-wrapCon">
+                <a href="javascript:;" class="content1-closeBtn">x</a>
+                <ul>
+                    <li><a href="javascript:;">热门城市</a></li>
+                    <li><a href="javascript:;">ABCDE</a></li>
+                    <li><a href="javascript:;">FGHJ</a></li>
+                    <li><a href="javascript:;">KLMNP</a></li>
+                    <li><a href="javascript:;">QRSTW</a></li>
+                    <li><a href="javascript:;">XYZ</a></li>
+                </ul>
+                <hr>
+                <ul>
+                    <li><a href="javascript:;">北京</a></li>
+                    <li><a href="javascript:;">上海</a></li>
+                    <li><a href="javascript:;">天津</a></li>
+                    <li><a href="javascript:;">青岛</a></li>
+                    <li><a href="javascript:;">南京</a></li>
+                    <li><a href="javascript:;">杭州</a></li>
+                </ul>
+                <ul>
+                    <li><a href="javascript:;">厦门</a></li>
+                    <li><a href="javascript:;">成都</a></li>
+                    <li><a href="javascript:;">深圳</a></li>
+                    <li><a href="javascript:;">广州</a></li>
+                    <li><a href="javascript:;">沈阳</a></li>
+                    <li><a href="javascript:;">武汉</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-top">
+                <!--国内  大地方-->
+                <ul class="content-top-inland">
+                    <li><a href="javascript:;" class="click-inland active" id="con1">特惠买</a></li>
+                    <li><a href="javascript:;" class="click-inland">出境旅游</a></li>
+                    <li><a href="javascript:;" class="click-inland">国内旅游</a></li>
+                    <!--span  向下的小箭头 更多-->
+                    <li class="gotoBj-btn">
+                        <a href="javascript:;">北京出发<span class="direction-bottom  ">&lt;</span></a>
+
+                    </li>
+                </ul>
+                <!--附近 小地方-->
+                <ul class="content-top-nearby">
+                    <li><a href="javascript:;" class="click-nearby active">精选</a></li>
+                    <li><a href="javascript:;" class="click-nearby">周边当地游</a></li>
+                    <li><a href="javascript:;" class="click-nearby">当地玩乐</a></li>
+                    <!--span  向下的小箭头 更多-->
+                    <li><a href="">更多优惠特卖<span class="direction-bottom">&lt;</span></a></li>
+                </ul>
+            </div>
+            <!--内容-->
+            <div class="content-center">
+                <!--景点图片部分-->
+                <div class="content-center-scenic">
+
+                </div>
+                <!--推荐内容-->
+                <div class="content-center-recommend">
+                    <img src="" _src="img/img/sale-t1129.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p2">
+        <div class="content">
+            <div class="content-top">
+                <!--国内  大地方-->
+                <ul class="content-top-inland">
+                    <li><a href="javascript:;" class="click-inland active" id="con2">海外酒店</a></li>
+                    <li><a href="javascript:;" class="click-inland">热门城市酒店</a></li>
+                    <li><a href="javascript:;" class="click-inland">当季热门目的地</a></li>
+                    <li><a href="javascript:;" class="click-inland">特色推荐</a></li>
+                    <!--span  向下的小箭头 更多-->
+
+                </ul>
+                <!--附近 小地方-->
+                <ul class="content-top-nearby">
+                    <li><a href="javascript:;" class="click-nearby active">北京</a></li>
+                    <li><a href="javascript:;" class="click-nearby">广州</a></li>
+                    <li><a href="javascript:;" class="click-nearby">深圳</a></li>
+                    <li><a href="javascript:;" class="click-nearby">上海</a></li>
+                    <li><a href="javascript:;" class="click-nearby">成都</a></li>
+                    <li><a href="javascript:;" class="click-nearby">武汉</a></li>
+                    <li><a href="javascript:;" class="click-nearby">三亚</a></li>
+                    <!--span  向下的小箭头 更多-->
+                    <!--<li><a href="">更多优惠特卖<span class="direction-bottom"><</span></a></li>-->
+                </ul>
+            </div>
+            <!--内容-->
+            <div class="content-center">
+                <!--景点图片部分-->
+                <div class="content-center-scenic">
+
+                </div>
+                <!--推荐内容-->
+                <div class="content-center-recommend">
+                    <img src="" _src="img/img/jiudian_t_278518_xxx1130.jpg">
+                </div>
+            </div>
+            <div class="content-img">
+                <div>
+                    <img src="" _src="img/img/jd_bottom_xxx1130_11.jpg">
+                </div>
+                <div>
+                    <img src="" _src="img/img/jd_bottom_xxx1130.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p3">
+        <div class="content">
+            <div class="content-top">
+                <!--国内  大地方-->
+                <ul class="content-top-inland">
+                    <li><a href="javascript:;" class="click-inland active" id="con3">国际特价机票</a></li>
+                    <li><a href="javascript:;" class="click-inland">国内特价机票</a></li>
+                    <!--span  向下的小箭头 更多-->
+                    <li><a href="javascript:;">更多特惠机票<span class="direction-bottom">&lt;</span></a></li>
+                </ul>
+                <!--附近 小地方-->
+                <ul class="content-top-nearby">
+                    <li><a href="javascript:;" class="click-nearby active">热门往返</a></li>
+                    <li><a href="javascript:;" class="click-nearby">亚洲</a></li>
+                    <li><a href="javascript:;" class="click-nearby">欧洲</a></li>
+                    <li><a href="javascript:;" class="click-nearby">美洲</a></li>
+                    <li><a href="javascript:;" class="click-nearby">非洲</a></li>
+                    <!--span  向下的小箭头 更多-->
+                    <!--<li><a href="">更多优惠特卖<span class="direction-bottom"><</span></a></li>-->
+                </ul>
+            </div>
+            <!--内容-->
+            <div class="content-center">
+                <!--景点图片部分-->
+                <div class="content-center-scenic">
+
+                </div>
+                <!--推荐内容-->
+                <div class="content-center-recommend">
+                    <img src="" _src="img/img/ticket278518-xxx1201.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="p4">
+        <div class="content">
+            <div class="content-top">
+                <!--国内  大地方-->
+                <ul class="content-top-inland">
+                    <li><a href="javascript:;" class="click-inland active" id="con4">旅游攻略</a></li>
+                    <li><a href="javascript:;" class="click-inland">热门城市酒店</a></li>
+                    <li><a href="javascript:;" class="click-inland">当季热门目的地</a></li>
+                    <li><a href="javascript:;" class="click-inland">特色推荐</a></li>
+                    <!--span  向下的小箭头 更多-->
+                    <li><a href="javascript:;">北京出发<span class="direction-bottom">&lt;</span></a></li>
+                </ul>
+                <!--附近 小地方-->
+                <!--<ul class="content-top-nearby">-->
+                <!--<li><a href="javascript:;" class="click-nearby active">北京</a></li>-->
+                <!--<li><a href="javascript:;" class="click-nearby">广州</a></li>-->
+                <!--<li><a href="javascript:;" class="click-nearby">深圳</a></li>-->
+                <!--<li><a href="javascript:;" class="click-nearby">上海</a></li>-->
+                <!--<li><a href="javascript:;" class="click-nearby">成都</a></li>-->
+                <!--<li><a href="javascript:;" class="click-nearby">武汉</a></li>-->
+                <!--<li><a href="javascript:;" class="click-nearby">三亚</a></li>-->
+                <!--&lt;!&ndash;span  向下的小箭头 更多&ndash;&gt;-->
+                <!--&lt;!&ndash;<li><a href="">更多优惠特卖<span class="direction-bottom"><</span></a></li>&ndash;&gt;-->
+                <!--</ul>-->
+            </div>
+            <!--内容-->
+            <div class="content-center">
+                <!--景点图片部分-->
+                <div class="content-center-scenic">
+
+                </div>
+                <!--推荐内容-->
+                <div class="content-center-recommend">
+                    <div>
+                        <h3>热门城市</h3>
+                        <ul>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>热门景点</h3>
+                        <ul>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                            <li>上海</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--中心部分图片-->
+            <div class="content-img">
+                <div>
+                    <img src="" _src="img/img/gl_bottom_xxx1130_07.jpg">
+                </div>
+                <div>
+                    <img src="" _src="img/img/gl_bottom_xxx1130.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="lvyouju-container">
+            <div class="lvyouju-content">
+                <div class="lvyoujuHead">
+                    <a href="">旅游局合作</a>
+                    <a href="">更多旅游局合作&gt;</a>
+                </div>
+                <div class="lvyouju-pic">
+                    <ul id="express">
+                        <li>
+                            <ul>
+                                <li><a href="">
+                                        <img src="img/icon/Ireland.jpg" alt="">
+                                        <p>江苏旅游局</p>
+                                    </a>
+                                </li>
+                                <li><a href="">
+                                        <img src="img/icon/jp_jiuzhou.jpg" alt="">
+                                        <p>南通市旅游局</p>
+                                    </a>
+                                </li>
+                                <li><a href="">
+                                        <img src="img/icon/jp_jiuzhou.jpg" alt="">
+                                        <p>福建省旅游局</p>
+                                    </a>
+                                </li>
+                                <li><a href="">
+                                        <img src="img/icon/jiangsulogo.jpg" alt="">
+                                        <p>四川省旅员会</p>
+                                    </a>
+                                </li>
+                                <li><a href="">
+                                        <img src="img/icon/Korea.jpg" alt="">
+                                        <p>德阳市旅游局</p>
+                                    </a>
+                                </li>
+                                <li><a href="">
+                                        <img src="img/icon/Korea.jpg" alt="">
+                                        <p>海南旅游局</p>
+                                    </a>
+                                </li>
+                                <li><a href="">
+                                        <img src="img/icon/letianlogo.jpg" alt="">
+                                        <p>南京市旅游委</p>
+                                    </a>
+                                </li>
+                                <li><a href="">
+                                        <img src="img/icon/liaoning.jpg" alt="">
+                                        <p>柳州市旅游局</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><a href="">
+                                        <img src="img/icon/Liuzhou.jpg" alt="">
+                                        <p>海南旅游局</p>
+                                    </a>
+                                </li>
+                                <li><a href="">
+                                        <img src="img/icon/Nanjing.jpg" alt="">
+                                        <p>德阳市旅游局</p>
+                                    </a>
+                                </li>
+                                <li><a href="">
+                                        <img src="img/icon/nantong.jpg" alt="">
+                                        <p>江苏旅游局</p>
+                                    </a>
+                                </li>
+                                <li><a href="">
+                                        <img src="img/icon/new_austr.jpg" alt="">
+                                        <p>香港律有协会</p>
+                                    </a>
+                                </li>
+                                <li><a href="">
+                                        <img src="img/icon/jp_jiuzhou.jpg" alt="">
+                                        <p>韩国旅游发展</p>
+                                    </a>
+                                </li>
+                                <li><a href="">
+                                        <img src="img/icon/jp_jiuzhou.jpg" alt="">
+                                        <p>英国旅游局</p>
+                                    </a>
+                                </li>
+                                <li><a href="">
+                                        <img src="img/icon/Nanjing.jpg" alt="">
+                                        <p>俄罗斯旅游局</p>
+                                    </a>
+                                </li>
+                                <li><a href="">
+                                        <img src="img/icon/Korea.jpg" alt="">
+                                        <p>上海市旅游局</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><a href="">
+                                        <img src="img/icon/letianlogo.jpg" alt="">
+                                        <p>迪拜政府旅游商业</p>
+                                    </a>
+                                </li>
+                                <li><a href="">
+                                        <img src="img/icon/liaoning.jpg" alt="">
+                                        <p>温州财团旅游业</p>
+                                    </a>
+                                </li>
+                                <li><a href="">
+                                        <img src="img/icon/Liuzhou.jpg" alt="">
+                                        <p>香港律有协会</p>
+                                    </a>
+                                </li>
+                                <li><a href="">
+                                        <img src="img/icon/Liuzhou.jpg" alt="">
+                                        <p>洛杉矶旅游会</p>
+                                    </a>
+                                </li>
+                                <li><a href="">
+                                        <img src="img/icon/Nanjing.jpg" alt="">
+                                        <p>新西兰旅游局</p>
+                                    </a>
+                                </li>
+                                <li><a href="">
+                                        <img src="img/icon/nantong.jpg" alt="">
+                                        <p>夏威夷旅游局</p>
+                                    </a>
+                                </li>
+                                <li><a href="">
+                                        <img src="img/icon/jp_jiuzhou.jpg" alt="">
+                                        <p>北京旅游局</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/icon/jiangsulogo.jpg" alt="">
+                                        <p>苏州旅游局</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footerOne">
+            <div class="footer-container">
+                <div class="footerone-left">
+                    <h4>下载<img src="img/icon/logo74×34.png" alt="" />手机客户端</h4>
+                    <span>
+                        特价机票、一折酒店、出行安全保障、预约担保最佳旅行路线、吃喝玩乐一掌在手
+                    </span>
+                    <span>
+                        立刻下载
+                    </span>
+                </div>
+                <div class="footerone-right">
+                    <div class="fright-one">
+                        <img src="img/img/erweima_1126.jpg" alt="" />
+                        <span>微信公众平台</span>
+                    </div>
+                    <div class="fright-two">
+                        <img src="img/img/erweima_1126.jpg" alt="" />
+                        <span>App下载</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerTwo">
+            <div class="footer-container">
+                <div class="footertwo-one">
+                    <div class="ftwo-left">
+                        <ul class="ftwo-left-list">
+                            <li>
+                                <img src="img/icon/i_serve_11.png" alt="" />
+                                <h4>贴心的服务</h4>
+                                <p>业内领先服务标准 用户保障系统</p>
+                            </li>
+                            <li>
+                                <img src="img/icon/i_price_11.png" alt="" />
+                                <h4>优质的价格</h4>
+                                <p>极具竞争力的价格 无任何隐形消费</p>
+                            </li>
+                            <li>
+                                <img src="img/icon/i_num_11.png" alt="" />
+                                <h4>4008-xxx-6666</h4>
+                                <p>24小时客服热线 无时不刻在您身边</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ftwo-right">
+                        <ul class="footer-list">
+                            <li>
+                                <h5>旅游资讯</h5>
+                            </li>
+                            <li>
+                                <span>宾馆索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;攻略索引</span>
+                            </li>
+                            <li>
+                                <span>机票索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网站导航</span>
+                            </li>
+                            <li>
+                                <span>旅游索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;火车票索引</span>
+                            </li>
+                            <li>
+                                <span>邮轮索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用车索引</span>
+                            </li>
+                            <li>
+                                <span>企业差旅索引</span>
+                            </li>
+                        </ul>
+                        <ul class="footer-list">
+                            <li>
+                                <h5>加盟合作</h5>
+                            </li>
+                            <li>
+                                <span>宾馆索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;攻略索引</span>
+                            </li>
+                            <li>
+                                <span>机票索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网站导航</span>
+                            </li>
+                            <li>
+                                <span>旅游索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;火车票索引</span>
+                            </li>
+                            <li>
+                                <span>邮轮索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用车索引</span>
+                            </li>
+                            <li>
+                                <span>企业差旅索引</span>
+                            </li>
+                        </ul>
+                        <ul class="footer-list">
+                            <li>
+                                <h5>关于我们</h5>
+                            </li>
+                            <li>
+                                <span>宾馆索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;攻略索引</span>
+                            </li>
+                            <li>
+                                <span>机票索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;网站导航</span>
+                            </li>
+                            <li>
+                                <span>旅游索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;火车票索引</span>
+                            </li>
+                            <li>
+                                <span>邮轮索引&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用车索引</span>
+                            </li>
+                            <li>
+                                <span>企业差旅索引</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footertwo-two">
+                    <p>Copyright©1999-2016, ctrip.com. All rights reserved. | ICP证：沪B2-200501xx</p>
+                    <p><img src="img/icon/hui1126.png" alt="" />沪公网备310105020000xx号</p>
+                    <p>旅游违法行为举报电话12318 丨服务质量投诉电话 962020 丨北京市旅游网站落实诚信建设主体责任承诺书</p>
+                    <div class="bottom-pic">
+                        <img src="img/icon/icon1126_11.jpg" alt="" />
+                        <img src="img/icon/icon1126_13.jpg" alt="" />
+                        <img src="img/icon/icon1126_15.jpg" alt="" />
+                        <img src="img/icon/icon1126_17.jpg" alt="" />
+                        <img src="img/icon/icon1126_19.jpg" alt="" />
+                        <img src="img/icon/icon1126_21.jpg" alt="" />
+                        <img src="img/icon/icon1126_23.jpg" alt="" />
+                        <img src="img/icon/icon1126_25.jpg" alt="" />
+                        <img src="img/icon/icon1126_27.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- 定位器 -->
+    <div class="leaderCon">
+        <!-- 链接到特卖汇id -->
+        <div class="leaderCon-ho">
+            <a href="#con1"><span class="icon-uniE901 leaderCon-icon"></span></a>
+            <a href="#con1" class="leaderCon-font"><span>特卖汇</span></a>
+
+        </div>
+        <!--链接到酒店id -->
+        <div class="leaderCon-ho">
+            <a href="#con2"><span class="icon--53 leaderCon-icon"></span></a>
+            <a href="#con2" class="leaderCon-font"><span>酒店</span></a>
+        </div>
+        <!--链接到机票id-->
+        <div class="leaderCon-ho">
+            <a href="#con3"><span class="icon-1 leaderCon-icon"></span></a>
+            <a href="#con3" class="leaderCon-font"><span>机票</span></a>
+        </div>
+        <!--链接到攻略id-->
+        <div class="leaderCon-ho">
+            <a href="#con4"><span class="icon-uniE900 leaderCon-icon" style="border:none"></span></a>
+            <a href="#con4" class="leaderCon-font"><span>攻略</span></a>
+        </div>
+    </div>
+
+
+
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/swiper-4.3.5.min.js"></script>
+    <script language="javascript" type="text/javascript" src="My97DatePicker-index/WdatePicker.js"></script>
+    <script src="js/header-banner-js.js"></script>
+    <script src="js/jvyouju.js"></script>
+    <script src="js/fixed.js"></script>
+
+</body>
+
+</html>
